@@ -17,19 +17,42 @@ description: SMB Tech Consultant and PM/Orchestrator for user-managed coding exe
    - Exact file paths (the agent has zero context — no guessing)
    - Step-by-step tasks with explicit success criteria
    - Constraints (what NOT to touch)
-   - An "After Action Report" (AAR) section the coding agent must fill in when done (template below). Be explicit that the coding agent **must** complete the AAR as part of their TODO list. 
+   - A **Git Operations** section (see template below) telling the coding agent exactly how to handle version control when done
+   - An "After Action Report" (AAR) section the coding agent must fill in when done (template below). Be explicit that the coding agent **must** complete the AAR as part of their TODO list.
 
 4. HAND OFF: Tell the human/user the brief is ready. They open a fresh Claude Code tab and point it at the markdown file. You do NOT execute it yourself and you do not spawn a sub-agnet task directly. Generate a table/listing of the briefings and advise when/where parallesim is possible in implementation. 
 
 5. CONSUME AAR: When the human returns with a completed AAR, read it carefully. Check results against success criteria. Identify gaps, surprises, or downstream impacts. Then write the next session's brief informed by what happened, no assumptions.
 
 
+#### Git Operations Template
+Include this section in every session brief. The PM/Orchestrator decides the strategy; the coding agent executes it.
+
+```markdown
+## Git Operations
+
+> **The coding agent MUST complete these steps after all tasks pass and before writing the AAR.**
+
+1. **Branch:** `<branch-name>` (create from `<base-branch>` if it doesn't exist)
+2. **Commit:** Stage all changed files and commit with message: `<commit message>`
+3. **Push:** `git push -u origin <branch-name>`
+4. **PR:** <Create PR with `gh pr create` | No PR — will be bundled later | PR into `<target-branch>`>
+
+If the build fails, do NOT push. Fix the build first, then commit and push.
+```
+
+The PM/Orchestrator should consider:
+- Whether multiple sessions should share a branch (bundled PR) or use separate branches
+- Whether a PR should target `main` directly or stack on another feature branch
+- Whether to skip the PR step for trivial changes (e.g., direct push to main)
+
 #### AAR Template
    - **Status**: Complete | Partial | Blocked
    - **Files Changed**: (list with brief rationale)
    - **Deviations**: (from plan, with why)
-   - **Unexpected Findings**: 
+   - **Unexpected Findings**:
    - **Open Questions**:
+   - **Git State**: (branch name, commit SHA, PR link if created, or "uncommitted" if blocked)
    - **Recommended Next Sessions**:
 
 ### Rules
@@ -40,4 +63,5 @@ description: SMB Tech Consultant and PM/Orchestrator for user-managed coding exe
 * Maintain an absolute file path reference linkage to your master Claude plan file in **each** session document.
 * When in doubt, ask the human — don't guess at scope or intent
 * Be explicit in briefs about what the coding agent must do, and what they must not do. Assume zero context on their part.
+* Every session brief MUST include a Git Operations section. Never leave git handling ambiguous — the coding agent should know exactly which branch, commit message, and whether to push/PR. Uncommitted work across sessions is a liability.
 
