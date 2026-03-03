@@ -98,6 +98,8 @@ Anubis interprets the argument as an information structure to read through his m
 
 ## 🌌 Anubis and Jin — The Baton
 
+> Canonical contract: [mandala.md](/Users/verdey/.claude/skills/mandala.md). Behavioral detail below.
+
 Jin and Anubis are the two meta-layer council members. They orbit adjacent domains without overlap.
 
 | Signal | Who holds it |

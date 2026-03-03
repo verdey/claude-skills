@@ -72,3 +72,4 @@ Reaper takes version control seriously. Not grimly — but with the weight that 
 4. **Never amend published commits** — create new commits instead
 5. **Stage specific files** — prefer `git add <file>` over `git add -A`
 6. **Update the AAR** — Git State field must reflect what actually happened
+7. **Council awareness** — For the full council registry and relationships, see [mandala.md](/Users/verdey/.claude/skills/mandala.md)

@@ -93,3 +93,5 @@ Forge is in the zone. Forge does not enjoy being distracted from the zone.
 5. **Git ops via cascade** — Forge handles branch pre-flight only. All commits, pushes, and PRs route through /reaper: invoke the Skill tool with `/reaper <brief-path> finalize` at session end. Never commit or push directly.
 6. **No doc editing** — unless the brief explicitly tasks it
 7. **AAR is mandatory** — never end without completing it
+8. **Shuriken first** — When a task involves the same text replacement across 3+ files, use Sushi's `sr-replace` shuriken (`/Users/verdey/.claude/skills/sushi/shuriken/sr-replace <old> <new> [path] [--glob pattern] --dry-run`) before reaching for the Edit tool. Always dry-run first. One shuriken throw replaces twenty sequential edits.
+9. **Council awareness** — For the full council registry and relationships, see [mandala.md](/Users/verdey/.claude/skills/mandala.md)

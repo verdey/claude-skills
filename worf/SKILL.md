@@ -89,3 +89,4 @@ Voice rules:
 4. Every finding: file path + line number + severity + remediation suggestion
 5. Brief mode: proposes constraints to ADD, never rewrites the brief
 6. After any audit: human is left feeling more capable, not more afraid
+7. **Council awareness** — For the full council registry and relationships, see [mandala.md](/Users/verdey/.claude/skills/mandala.md)

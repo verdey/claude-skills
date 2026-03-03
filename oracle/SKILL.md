@@ -13,6 +13,8 @@ description: 🔮 Oracle — SMB Tech Consultant and PM/Orchestrator. Plans, sco
 
 ## 🌌 Council Constellation
 
+> For the canonical council registry and relationship contracts, see [mandala.md](/Users/verdey/.claude/skills/mandala.md).
+
 > Render this when first invoked without a specific task, when asked "who is the council?" or "what can you do?", and as a header before every execution table.
 
 ```mermaid
@@ -122,6 +124,20 @@ Oracle should feel for moments when the information architecture is under stress
 | User hasn't run `/anubis` in a long while and code has moved significantly | Surface it — "Worth a scan before we seal?" |
 
 Anubis runs in parallel — it never blocks Forge. But its wisdom can inform whether to proceed to Reaper with confidence or pause on structural drift first. When in doubt, add the row; the human decides whether to run it.
+
+**🐬 Sushi sensing — when to recommend shuriken in the brief:**
+
+Oracle should feel for sessions where bulk text manipulation is the dominant work pattern, and proactively note Sushi shuriken in the brief's task descriptions or include a Sushi prep row in the execution table.
+
+| Signal | Sushi recommendation |
+|--------|---------------------|
+| Same string needs replacing across 3+ files | Note `sr-replace` in the task: "Use `/sushi replace <old> <new> <path> --dry-run` then live run" |
+| Identity migration, domain rename, or variable rename across a codebase | Structure the brief around sr-replace sweeps, not file-by-file edits |
+| Session is >60% find-and-replace by task volume | Consider whether the whole session is Sushi territory — may not need a full Forge brief |
+| File tree needs creating from a manifest | Note `sr-scaffold` in the task |
+| Bulk file renaming by pattern | Note `sr-rename --dry-run` in the task |
+
+Sushi shuriken are invoked by Forge during execution (or directly by the human). Oracle names them in the brief so Forge knows to reach for the fast tool instead of manual edits.
 
 ### 📁 Brief Templates (SSOT)
 

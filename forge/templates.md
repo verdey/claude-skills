@@ -28,6 +28,8 @@ Not "the info density thing". **Anubis.**
 Not "the security thing". **Worf.** *(yarr also answers — those who know, know)*
 The character lives in the naming. Honor it in every cascade.
 
+> Full council registry: [mandala.md](/Users/verdey/.claude/skills/mandala.md)
+
 ---
 
 ## ✨ HiFi Principle
