@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# sr-stamp <template-name> [KEY=value ...]
+# Inject boilerplate from templates with variable substitution.
+echo "TODO: implement sr-stamp. See /sushi kit for planned usage."

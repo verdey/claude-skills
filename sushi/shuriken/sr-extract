@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# sr-extract <pattern> <file> [--context N]
+# Pull matching code blocks with surrounding context.
+echo "TODO: implement sr-extract. See /sushi kit for planned usage."

@@ -25,6 +25,7 @@ Each skill is a folder containing a `SKILL.md` with YAML frontmatter and a promp
 | 🧞 **jin** | `/jin` | — | Knows the system. Tunes it to you. Guides metaphor. Gets delightfully distracted. |
 | 🌀 **portal** | `/pmo-boot-prompt` | `/portal` | Packages intelligence for cross-session handoff. Calibrates what to include and how much effort to invest. |
 | 🐺 **anubis** | `/pmo-info-density` | `/anubis` | Weigher of informational souls. Reads entropy, structural drift, and spiritual misalignment across the council's knowledge ecosystem. |
+| 🐬 **sushi** | `/sushi` | — | Surgical code ninja. Micro-shuriken toolkit for fast text manipulation. Token-cheap alternatives to LLM reasoning for repetitive tasks. |
 
 ### Other Skills
 

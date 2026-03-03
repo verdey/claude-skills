@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# sr-rename <old-pattern> <new-pattern> [path] [--dry-run]
+# Bulk rename files matching pattern.
+echo "TODO: implement sr-rename. See /sushi kit for planned usage."

@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+# sr-replace <old> <new> [path] [--glob pattern] [--dry-run]
+# Surgical inline replace. perl-powered. Always dry-run first.
+set -euo pipefail
+
+OLD="${1:?Missing: old string. Usage: sr-replace <old> <new> [path] [--glob pattern] [--dry-run]}"
+NEW="${2:?Missing: new string. Usage: sr-replace <old> <new> [path] [--glob pattern] [--dry-run]}"
+shift 2
+
+TARGET="."
+DRY_RUN=false
+GLOB_PATTERN=""
+
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        --dry-run) DRY_RUN=true ;;
+        --glob) shift; GLOB_PATTERN="${1:-}" ;;
+        *) TARGET="$1" ;;
+    esac
+    shift
+done
+
+# Build rg command for finding files
+RG_CMD="rg --color=never -l"
+[[ -n "$GLOB_PATTERN" ]] && RG_CMD="$RG_CMD --glob $GLOB_PATTERN"
+
+FILES=$($RG_CMD "$OLD" "$TARGET" 2>/dev/null || true)
+
+if [[ -z "$FILES" ]]; then
+    echo "No files contain '$OLD'"
+    exit 0
+fi
+
+FILE_COUNT=$(echo "$FILES" | wc -l | tr -d ' ')
+
+if [[ "$DRY_RUN" == true ]]; then
+    echo "DRY RUN — $FILE_COUNT file(s) would be modified:"
+    echo ""
+    echo "$FILES" | while IFS= read -r f; do
+        echo "--- $f"
+        rg --color=never -n "$OLD" "$f" 2>/dev/null || true
+    done
+else
+    echo "$FILES" | xargs perl -pi -e "s/\Q$OLD\E/$NEW/g"
+    echo "Replaced '$OLD' -> '$NEW' in $FILE_COUNT file(s):"
+    echo "$FILES"
+fi

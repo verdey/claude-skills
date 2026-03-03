@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# sr-scaffold <manifest-file> [base-path]
+# Create directory/file tree from plain-text manifest.
+echo "TODO: implement sr-scaffold. See /sushi kit for planned usage."

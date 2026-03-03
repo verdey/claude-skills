@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# sr-find <pattern> [path] [--files-only]
+# Fast rg-powered file+content search. Formatted for LLM + human readability.
+set -euo pipefail
+
+PATTERN="${1:?Missing: pattern. Usage: sr-find <pattern> [path] [--files-only]}"
+SEARCH_PATH="${2:-.}"
+
+if [[ "$*" == *"--files-only"* ]]; then
+    rg --files-with-matches "$PATTERN" "$SEARCH_PATH" 2>/dev/null || echo "No matches."
+else
+    rg --color=never -n --heading "$PATTERN" "$SEARCH_PATH" 2>/dev/null || echo "No matches."
+fi

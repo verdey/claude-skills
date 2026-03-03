@@ -20,6 +20,7 @@ When any council member references, calls, or delegates to another member — in
 | 🧞 Jin | `/jin` |
 | 🐺 Anubis | `/anubis` |
 | 🛡 Worf | `/worf` *(yarr also answers — those who know, know)* |
+| 🐬 Sushi | `/sushi` |
 
 Not `pmo-git`. Not "the git skill". **Reaper.**
 Not "the coding agent". **Forge.**
@@ -56,6 +57,7 @@ flowchart LR
   AN[🐺 anubis] -. weighs .-> O
   AN -. entropy scan .-> J
   WY[🛡 worf] -. guards .-> F
+  SU[🐬 sushi] -. shuriken .-> F
 ```
 
 | Step | Command | Who runs it |
@@ -68,6 +70,7 @@ flowchart LR
 | 2b · Docs | `/doc <path>` | Parallel with anything |
 | (opt) · Branch | `/reaper <brief> setup` | Feature branches only — before /forge |
 | (opt) · SecOps | `/worf` or `/yarr` | Before or after /forge — security audit of code or brief |
+| ∞ · Toolkit | `/sushi` | Any member or human → fast text manipulation via shuriken scripts |
 
 ---
 
@@ -183,7 +186,7 @@ in the Steaz design principles. If a text element could be more alive — it sho
 3. **Check**: <specific visual criteria from the task>
 4. **Screenshot**: Take a screenshot at each viewport if something looks off — describe the issue in the AAR.
 
-If Playwright MCP is unavailable, note in AAR under Unexpected Findings.
+If Playwright MCP is unavailable: **hard block.** Forge must not start a session with Visual QA requirements without Playwright connected. This line exists as a reminder in brief templates — the actual enforcement lives in Forge's pre-flight tool gate.
 ```
 
 ### Strategy Guidance (oracle)
