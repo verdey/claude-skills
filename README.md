@@ -31,6 +31,7 @@ Each skill is a folder containing a `SKILL.md` with YAML frontmatter and a promp
 | 🐬 **sushi** | `/sushi` | Toolkit | Surgical code ninja. Fast text manipulation and token-cheap scripting alternatives to LLM reasoning. |
 
 > Canonical registry: [mandala.md](mandala.md)
+> Archetype specification: [skill-archetype-spec.md](docs/skill-archetype-spec.md) — the 9 Arcturian Council Archetypes, P/S/T dynamic assignment model, and universe system
 
 ### Other Skills
 
