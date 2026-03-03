@@ -192,7 +192,7 @@ Follow the Default Git Topology above:
 Include in **every** brief that touches files a user would see (HTML, CSS, JS, Blade, components, layouts, routes). Only omit for pure backend/API sessions with zero UI impact. When in doubt, include it.
 
 **Living Text check:** For any session touching text rendering, cross-reference the
-[Living Text Doctrine](../../../code/verdey-projects/verdey_com/docs/sessions/dreamscapes/_steaz-arcturian-design-principles.md#living-text-doctrine)
+[Living Text Doctrine](../../../code/verdey-projects/steaz/docs/sessions/_steaz-arcturian-design-principles.md#living-text-doctrine)
 in the Steaz design principles. If a text element could be more alive — it should be.
 
 ### Brief Template
