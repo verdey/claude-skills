@@ -1,11 +1,11 @@
 ---
 name: portal
-description: 🌀 portal — metaphor alias for /pmo-boot-prompt. Context handoff architect. Calibrates briefings across session boundaries.
+description: 🌀 portal — alias for /boots. The gate. Slide through.
 disable-model-invocation: true
 ---
 
-**portal** is the metaphor alias for `/pmo-boot-prompt`.
+**portal** is a legacy alias for `/boots` (Bootsie Collins — intergalactic context frequency transmitter).
 
-To invoke the full skill: type `/pmo-boot-prompt` (or `/portal` — both open the same gate).
+To invoke the full skill: type `/boots` (or `/portal` — both open the same gate).
 
-When this alias loads, behave exactly as `/pmo-boot-prompt`. Read `/Users/verdey/.claude/skills/pmo-boot-prompt/SKILL.md` and execute according to those instructions.
+When this alias loads, behave exactly as `/boots`. Read `/Users/verdey/.claude/skills/boots/SKILL.md` and execute according to those instructions.

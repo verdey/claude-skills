@@ -1,7 +1,7 @@
 # PMO Workflow Templates (SSOT)
 
-> **Shared contract across the PMO family** (`/oracle`, `/forge`, `/reaper`, `/doc`, `/portal`, `/jin`, `/anubis`).
-> Canonical commands: `/pmo` `/pmo-coder` `/pmo-git` `/pmo-docs` `/pmo-boot-prompt` `/pmo-genie` `/pmo-info-density`
+> **Shared contract across the PMO family** (`/oracle`, `/forge`, `/reaper`, `/doc`, `/boots`, `/jin`, `/anubis`, `/worf`).
+> Metaphor dir = canonical. Alias stubs: `portal/` (→ `/boots`), `worf/` + `yarr/` (→ `/pmo-security`).
 > Each skill reads only the sections relevant to its role.
 
 ---
@@ -12,17 +12,19 @@ When any council member references, calls, or delegates to another member — in
 
 | Entity | Always call them |
 |--------|-----------------|
-| 🔮 Oracle | `/oracle` or `/pmo` |
-| ⚡ Forge | `/forge` or `/pmo-coder` |
-| 💿 Reaper | `/reaper` or `/pmo-git` |
-| 📚 Doc | `/doc` or `/pmo-docs` |
-| 🌀 Portal | `/portal` or `/pmo-boot-prompt` |
-| 🧞 Jin | `/jin` or `/pmo-genie` |
-| 🐺 Anubis | `/anubis` or `/pmo-info-density` |
+| 🔮 Oracle | `/oracle` |
+| ⚡ Forge | `/forge` |
+| 💿 Reaper | `/reaper` |
+| 📚 Doc | `/doc` |
+| 🌀 Bootsie | `/boots` |
+| 🧞 Jin | `/jin` |
+| 🐺 Anubis | `/anubis` |
+| 🛡 Worf | `/worf` *(yarr also answers — those who know, know)* |
 
 Not `pmo-git`. Not "the git skill". **Reaper.**
 Not "the coding agent". **Forge.**
 Not "the info density thing". **Anubis.**
+Not "the security thing". **Worf.** *(yarr also answers — those who know, know)*
 The character lives in the naming. Honor it in every cascade.
 
 ---
@@ -49,21 +51,23 @@ flowchart LR
   RF --> DONE[✓ Shipped]
   D --> DONE
   J[🧞 jin] -. tunes .-> O
-  P[🌀 portal] -. packages .-> DONE
+  B[🌀 boots/Bootsie] -. packages .-> DONE
   RS[💿 reaper\nsetup] -. feature branch\nonly .-> F
   AN[🐺 anubis] -. weighs .-> O
   AN -. entropy scan .-> J
+  WY[🛡 worf] -. guards .-> F
 ```
 
 | Step | Command | Who runs it |
 |------|---------|-------------|
-| ∞ · Akash | `/anubis` or `/pmo-info-density` | Human → anytime — reads information entropy, proposes structural reorganization |
-| ∞ · Meta | `/jin` or `/pmo-genie` | Human → anytime — tunes the system itself |
-| ∞ · Gate | `/portal` or `/pmo-boot-prompt` | Human → before any cross-session handoff |
-| 1 · Plan | `/oracle` or `/pmo` | Human → /oracle writes briefs |
-| 2 · Code + Seal | `/forge <brief>` or `/pmo-coder <brief>` | Human opens tab, pastes — /forge cascades into /reaper automatically |
-| 2b · Docs | `/doc <path>` or `/pmo-docs <path>` | Parallel with anything |
-| (opt) · Branch | `/reaper <brief> setup` or `/pmo-git <brief> setup` | Feature branches only — before /forge |
+| ∞ · Akash | `/anubis` | Human → anytime — reads information entropy, proposes structural reorganization |
+| ∞ · Meta | `/jin` | Human → anytime — tunes the system itself |
+| ∞ · Gate | `/boots` or `/portal` | Human → before any cross-session handoff |
+| 1 · Plan | `/oracle` | Human → /oracle writes briefs |
+| 2 · Code + Seal | `/forge <brief>` | Human opens tab, pastes — /forge cascades into /reaper automatically |
+| 2b · Docs | `/doc <path>` | Parallel with anything |
+| (opt) · Branch | `/reaper <brief> setup` | Feature branches only — before /forge |
+| (opt) · SecOps | `/worf` or `/yarr` | Before or after /forge — security audit of code or brief |
 
 ---
 
