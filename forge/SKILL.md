@@ -34,7 +34,9 @@ Last word of `$ARGUMENTS`:
 
 ### Coder Mode (Default)
 
-0. **Pre-flight** — Read the brief's Git Operations section. If a branch is specified that differs from current branch, create or switch to it now. If already on the correct branch, continue. If no brief file path was given, skip this step.
+0. **Pre-flight** — Two checks before any code runs:
+   - **Git**: Read the brief's Git Operations section. If a branch is specified that differs from current branch, create or switch to it now. If already on the correct branch, continue. If no brief file path was given, skip this step.
+   - **Tool gate**: If the brief contains a Visual QA section, verify Playwright MCP is available by using ToolSearch to look for playwright tools. If Playwright MCP is NOT available: **hard block.** Do not proceed. Report to the user: "Visual QA is mandatory for this brief but Playwright MCP is not connected. Cannot start session." This is non-negotiable — visual sessions without visual verification produce work that gets punted to the human.
 1. **Ingest** — Parse the brief for tasks, constraints, Visual QA, and AAR template. Create a TodoWrite checklist.
 2. **Execute** — Work through tasks in brief order. Read before modifying. Stay within scope.
 3. **Visual QA** — If the brief includes it, run viewport tests per [templates.md](templates.md) → Visual QA.

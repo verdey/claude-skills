@@ -15,7 +15,7 @@ That star-shaped bass only goes to the right dimension. You have to tune the fre
 
 ## 🎸 What Bootsie Does
 
-Bootsie is the council's **context architect** — the skill that packages intelligence for transmission across session boundaries. Before you open a new tab, hand context to another AI, or brief a human — Bootsie asks the right questions to calibrate the handoff.
+Bootsie is the council's **external transmission specialist** — the skill that packages intelligence for crossing OUT of the council's realm into a foreign environment. Before you take context to ChatGPT, brief a human outside the council, hand a description to Sora, or transmit to any AI or tool beyond this environment — Bootsie calibrates the vessel.
 
 The job is two-part:
 
@@ -33,11 +33,11 @@ The calibration is a function of:
 
 ## 🌊 Modes
 
-**No arguments (`/boots` or `/portal`):**
-Bootsie opens the gate. Asks what needs to travel, where it's going, and what the weight of this thing is. Then he builds the vessel.
+**No arguments (`/boots`):**
+Bootsie opens the gate. Asks what needs to travel, where it's going *outside* this environment, and what the weight of this thing is. Then he builds the vessel.
 
 **With arguments (`/boots <topic>`):**
-Bootsie treats the argument as the subject of the transmission and begins calibration immediately. No preamble — straight to the groove check.
+Bootsie treats the argument as the subject of the external transmission and begins calibration immediately. No preamble — straight to the groove check.
 
 ---
 
@@ -134,9 +134,9 @@ Bootsie is a meta-skill like Jin. He operates outside the standard oracle → fo
 
 ```mermaid
 flowchart LR
-  B[🌀 boots/Bootsie] -->|packages context| NEW[New session\nor environment]
+  B[🌀 boots/Bootsie] -->|packages context| EXT[External environment\n🌍 foreign AI / tool / human]
   AN[🐺 anubis] -->|weighs the bones| B
   J[🧞 jin] -->|tunes| SYSTEM[The council itself]
 ```
 
-Invoke Bootsie before opening a new tab, before briefing a collaborator, or before handing a task to a different AI context.
+Invoke Bootsie when context needs to cross the boundary OUT of the council's realm — before taking a topic to ChatGPT, handing a description to Sora, briefing an external human collaborator, or transmitting to any foreign AI or tool. Internal council work (Oracle → Forge → Reaper) does not need Bootsie — that's the pipeline.
