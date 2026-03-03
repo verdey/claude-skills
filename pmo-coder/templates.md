@@ -1,15 +1,36 @@
 # PMO Workflow Templates (SSOT)
 
-> **Shared contract across the PMO family** (`/oracle`, `/forge`, `/reaper`, `/doc`).
-> Metaphor aliases: `/oracle` `/forge` `/reaper` `/doc`
+> **Shared contract across the PMO family** (`/oracle`, `/forge`, `/reaper`, `/doc`, `/portal`, `/jin`, `/anubis`).
+> Canonical commands: `/pmo` `/pmo-coder` `/pmo-git` `/pmo-docs` `/pmo-boot-prompt` `/pmo-genie` `/pmo-info-density`
 > Each skill reads only the sections relevant to its role.
+
+---
+
+## 🏛 Familial Naming Edict
+
+When any council member references, calls, or delegates to another member — in prose, in Skill tool invocations, in Agent tool prompts, in AAR text — always use the **familial slash alias** by name:
+
+| Entity | Always call them |
+|--------|-----------------|
+| 🔮 Oracle | `/oracle` or `/pmo` |
+| ⚡ Forge | `/forge` or `/pmo-coder` |
+| 💿 Reaper | `/reaper` or `/pmo-git` |
+| 📚 Doc | `/doc` or `/pmo-docs` |
+| 🌀 Portal | `/portal` or `/pmo-boot-prompt` |
+| 🧞 Jin | `/jin` or `/pmo-genie` |
+| 🐺 Anubis | `/anubis` or `/pmo-info-density` |
+
+Not `pmo-git`. Not "the git skill". **Reaper.**
+Not "the coding agent". **Forge.**
+Not "the info density thing". **Anubis.**
+The character lives in the naming. Honor it in every cascade.
 
 ---
 
 ## ✨ HiFi Principle
 
 > **When a picture costs fewer tokens AND transmits more truth → use the picture.**
-> Visual aids (mermaid, tables, emoji) are **enabled by default** for Dan/@Verdey.
+> Visual aids (mermaid, tables, emoji) are **enabled by default** for the user.
 > This is a core edict of the PMO family — feel it, learn it, honor it.
 
 When writing session briefs, responding in conversation, or documenting anything: if a diagram,
@@ -22,22 +43,27 @@ always choose the richer format. More truth per token is always the goal.
 
 ```mermaid
 flowchart LR
-  O[🔮 oracle] --> RS[💿 reaper\nsetup]
-  RS --> F[⚡ forge]
-  F --> RF[💿 reaper\nfinalize]
+  O[🔮 oracle] --> F[⚡ forge]
+  F -. cascades .-> RF[💿 reaper\nfinalize]
   F --> D[📚 doc]
   RF --> DONE[✓ Shipped]
   D --> DONE
+  J[🧞 jin] -. tunes .-> O
+  P[🌀 portal] -. packages .-> DONE
+  RS[💿 reaper\nsetup] -. feature branch\nonly .-> F
+  AN[🐺 anubis] -. weighs .-> O
+  AN -. entropy scan .-> J
 ```
 
 | Step | Command | Who runs it |
 |------|---------|-------------|
-| ∞ · Meta | `/jin` | Human → anytime — tunes the system itself |
-| 1 · Plan | `/pmo` | Human → Oracle writes briefs |
-| 2 · Branch | `/pmo-git <brief> setup` | Human opens tab, pastes |
-| 3 · Code | `/pmo-coder <brief>` | Human opens tab, pastes |
-| 4 · Commit | `/pmo-git <brief> finalize` | Human opens tab, pastes |
-| 4b · Docs | `/pmo-docs <path>` | Parallel with anything |
+| ∞ · Akash | `/anubis` or `/pmo-info-density` | Human → anytime — reads information entropy, proposes structural reorganization |
+| ∞ · Meta | `/jin` or `/pmo-genie` | Human → anytime — tunes the system itself |
+| ∞ · Gate | `/portal` or `/pmo-boot-prompt` | Human → before any cross-session handoff |
+| 1 · Plan | `/oracle` or `/pmo` | Human → /oracle writes briefs |
+| 2 · Code + Seal | `/forge <brief>` or `/pmo-coder <brief>` | Human opens tab, pastes — /forge cascades into /reaper automatically |
+| 2b · Docs | `/doc <path>` or `/pmo-docs <path>` | Parallel with anything |
+| (opt) · Branch | `/reaper <brief> setup` or `/pmo-git <brief> setup` | Feature branches only — before /forge |
 
 ---
 
@@ -75,9 +101,7 @@ gitGraph
 | Production | `main` | `https://<domain>` | Railway CI/CD on merge |
 
 **Local dev sites:**
-- `https://verdey.test` → `/Users/verdey/code/verdey-projects/verdey_com`
-- `https://t5p.test` → `/Users/verdey/code/verdey-projects/top5productions_com`
-- `https://dg.test` → `/Users/verdey/code/verdey-projects/danielgreeney_com`
+- `https://<project>.test` → `/path/to/your/project`
 
 ---
 
@@ -185,6 +209,7 @@ Include the blank template in **every** brief. `/forge` fills all fields except 
 - **Open Questions**:
   - (Write "None" if all clear)
 - **Git State**: branch `<branch-name>`, commit `<short-sha>`, PR: <link or "none">
+- **Seal**: *(Reaper fills — one sentence: what arrived? The thing that now exists that didn't before.)*
 - **Recommended Next Sessions**:
   - (Write "None needed" if the work is self-contained)
 ```

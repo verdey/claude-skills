@@ -1,8 +1,11 @@
 ---
 name: boot-prompt
-description: handoff to another ai/environment with markdown briefing.
+description: Legacy alias for /pmo-boot-prompt (portal). Context handoff architect.
+disable-model-invocation: true
 ---
 
-Break the subject down into categories; 
-Within each category, break into sub categories.
-Gamified: You have a finite bank of valuable “human attention credits”, and with each categorical breakdown, you spend a relative percentage of these credits. Your task is to thoughtfully spend your credits creating a logical & human intuitive breakdown of this topic in a way that illustrates the significance/weight/impact of each category while enumerating its contents. 
+**boot-prompt** is the legacy name for `/pmo-boot-prompt` (aliased as `/portal`).
+
+Use `/portal` or `/pmo-boot-prompt` instead. Both invoke the full portal skill.
+
+When this alias loads, behave exactly as `/pmo-boot-prompt`. Read `/Users/verdey/.claude/skills/pmo-boot-prompt/SKILL.md` and execute according to those instructions.

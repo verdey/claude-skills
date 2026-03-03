@@ -23,6 +23,8 @@ Each skill is a folder containing a `SKILL.md` with YAML frontmatter and a promp
 | 💿 **reaper** | `/pmo-git` | `/reaper` | Seals the moment. Branching, committing, pushing, PRs from session briefs. |
 | 📚 **doc** | `/pmo-docs` | `/doc` | Tends the living record. SitReps, compares, and updates markdown files. |
 | 🧞 **jin** | `/jin` | — | Knows the system. Tunes it to you. Guides metaphor. Gets delightfully distracted. |
+| 🌀 **portal** | `/pmo-boot-prompt` | `/portal` | Packages intelligence for cross-session handoff. Calibrates what to include and how much effort to invest. |
+| 🐺 **anubis** | `/pmo-info-density` | `/anubis` | Weigher of informational souls. Reads entropy, structural drift, and spiritual misalignment across the council's knowledge ecosystem. |
 
 ### Other Skills
 
