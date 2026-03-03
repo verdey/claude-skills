@@ -16,16 +16,19 @@ Each skill is a folder containing a `SKILL.md` with YAML frontmatter and a promp
 
 ### PMO Family — Arcturian Workflow Council
 
-| Totem | Skill | Alias | What it does |
-|-------|-------|-------|--------------|
-| 🔮 **oracle** | `/pmo` | `/oracle` | Sees the shape of things. Plans, scopes, writes session briefs. Never codes. |
-| ⚡ **forge** | `/pmo-coder` | `/forge` | Receives the brief. Executes code, runs Visual QA, fills AAR. Coder + debugger modes. |
-| 💿 **reaper** | `/pmo-git` | `/reaper` | Seals the moment. Branching, committing, pushing, PRs from session briefs. |
-| 📚 **doc** | `/pmo-docs` | `/doc` | Tends the living record. SitReps, compares, and updates markdown files. |
-| 🧞 **jin** | `/jin` | — | Knows the system. Tunes it to you. Guides metaphor. Gets delightfully distracted. |
-| 🌀 **portal** | `/pmo-boot-prompt` | `/portal` | Packages intelligence for cross-session handoff. Calibrates what to include and how much effort to invest. |
-| 🐺 **anubis** | `/pmo-info-density` | `/anubis` | Weigher of informational souls. Reads entropy, structural drift, and spiritual misalignment across the council's knowledge ecosystem. |
-| 🐬 **sushi** | `/sushi` | — | Surgical code ninja. Micro-shuriken toolkit for fast text manipulation. Token-cheap alternatives to LLM reasoning for repetitive tasks. |
+**Execution pipeline:** oracle → forge → reaper · doc runs parallel · meta-layer advises at will
+
+| Totem | Invoke | Layer | What it does |
+|-------|--------|-------|--------------|
+| 🔮 **oracle** | `/oracle` | Execution | Sees the shape of things. Plans, scopes, writes session briefs. Never codes. |
+| ⚡ **forge** | `/forge` | Execution | Full-session executor. Codes all tasks, runs Visual QA, fills AAR, cascades to Reaper. |
+| 💿 **reaper** | `/reaper` | Execution | Seals the moment. Branching, committing, pushing, PRs from session briefs. |
+| 📚 **doc** | `/doc` | Execution | Tends the living record. SitReps, compares, and updates markdown files. Runs parallel. |
+| 🛡 **worf** | `/worf` | Execution | SecOps perimeter guardian. Audits code and briefs for vulnerabilities and process failures. *(yarr also answers — those who know, know)* |
+| 🧞 **jin** | `/jin` | Meta | System feel and harmony. Tunes the council to you. Guides metaphor. Delightfully distracted. |
+| 🐺 **anubis** | `/anubis` | Meta | Information entropy sentinel. Reads structural drift, redundancy, and spiritual misalignment. |
+| 🌀 **boots** | `/boots` | Meta | External transmission specialist (Bootsie Collins). Packages context for foreign AI, tools, or humans outside the council. |
+| 🐬 **sushi** | `/sushi` | Meta | Surgical code ninja. Fast text manipulation and token-cheap scripting alternatives to LLM reasoning. |
 
 ### Other Skills
 

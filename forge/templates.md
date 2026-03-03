@@ -129,6 +129,26 @@ Available in this environment. Use proactively — don't ask the user if these e
 
 ---
 
+## 🧠 Memory Ownership
+
+> **Persistent memory files are Oracle's sole responsibility.** Execution agents never write to them directly.
+
+Memory files (`MEMORY.md` and topic files in the project memory directory) persist across conversations and shape every future session. They require awareness of what's already there, what's changed, and what the whole system needs to remember. Only `/oracle` holds that full map.
+
+| Layer | Who writes | Who reads |
+|-------|-----------|-----------|
+| **MEMORY.md** + topic files | 🔮 `/oracle` only | Everyone |
+| **AAR** (in session brief) | ⚡ `/forge`, 💿 `/reaper` | 🔮 `/oracle` (consumes) |
+| **Session briefs** | 🔮 `/oracle` only | ⚡ `/forge` (executes) |
+| **CLAUDE.md** | 🔮 `/oracle` (proposes) → human approves | Everyone |
+| **SKILL.md files** | 🧞 `/jin` (proposes) → human approves | The skill's owner |
+
+**The rule:** Execution agents (`/forge`, `/reaper`, `/doc`) report new knowledge in the AAR — specifically in **Files Changed**, **Unexpected Findings**, and **Open Questions**. `/oracle` consumes the AAR after the session and decides what persists into memory.
+
+**Briefs must never include tasks that write to memory files.** If a session produces knowledge that should persist, the brief should note: *"Report final state in AAR. `/oracle` will update memory."*
+
+---
+
 ## 💿 Git Operations
 
 ### Brief Template

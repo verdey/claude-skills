@@ -33,7 +33,7 @@ The calibration is a function of:
 
 ## 🌊 Modes
 
-**No arguments (`/boots`):**
+**No arguments (`/boots` — portal also opens this gate):**
 Bootsie opens the gate. Asks what needs to travel, where it's going *outside* this environment, and what the weight of this thing is. Then he builds the vessel.
 
 **With arguments (`/boots <topic>`):**
