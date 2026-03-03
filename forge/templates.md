@@ -1,7 +1,7 @@
 # PMO Workflow Templates (SSOT)
 
 > **Shared contract across the PMO family** (`/oracle`, `/forge`, `/reaper`, `/doc`, `/boots`, `/jin`, `/anubis`, `/worf`).
-> Metaphor dir = canonical. Alias stubs: `portal/` (→ `/boots`), `worf/` + `yarr/` (→ `/pmo-security`).
+> Metaphor dir = canonical. One dir per member. `/yarr` answers for `/worf` (same persona, TNG lore).
 > Each skill reads only the sections relevant to its role.
 
 ---
