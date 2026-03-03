@@ -14,12 +14,21 @@ Each skill is a folder containing a `SKILL.md` with YAML frontmatter and a promp
 
 ## Skills in this repo
 
+### PMO Family — Arcturian Workflow Council
+
+| Totem | Skill | Alias | What it does |
+|-------|-------|-------|--------------|
+| 🔮 **oracle** | `/pmo` | `/oracle` | Sees the shape of things. Plans, scopes, writes session briefs. Never codes. |
+| ⚡ **forge** | `/pmo-coder` | `/forge` | Receives the brief. Executes code, runs Visual QA, fills AAR. Coder + debugger modes. |
+| 💿 **reaper** | `/pmo-git` | `/reaper` | Seals the moment. Branching, committing, pushing, PRs from session briefs. |
+| 📚 **doc** | `/pmo-docs` | `/doc` | Tends the living record. SitReps, compares, and updates markdown files. |
+| 🧞 **jin** | `/jin` | — | Knows the system. Tunes it to you. Guides metaphor. Gets delightfully distracted. |
+
+### Other Skills
+
 | Skill | Trigger | What it does |
 |-------|---------|--------------|
-| **boot-prompt** | `/boot-prompt` | Generates structured markdown briefings for handing off context to another AI or environment. Breaks topics into weighted categories using a "human attention credits" budget. |
-| **example** | `/example` | Reference template showing every SKILL.md feature: arguments, shell injection, supporting files, scope rules, context budget, and extended thinking. Start here when creating a new skill. |
-| **pm-orchestrator** | `/pm-orchestrator` | Acts as a PM that plans and scopes work into session briefs — markdown docs a human hands to fresh Claude Code tabs. Never writes code itself. Consumes After Action Reports between sessions. |
-| **sitrep-docs** | `/sitrep-docs` | Audits all non-README markdown in a project. Identifies which docs are done (deletable) vs. have remaining work. Recommends cleanup and prioritization. |
+| **_example** | `/_example` | 🗺 Dev reference. All SKILL.md frontmatter options. Not a live skill. |
 
 ## Setup
 
@@ -50,7 +59,7 @@ description: Short description of what it does and when to trigger it
 Your prompt goes here. Use $ARGUMENTS for user input from `/my-skill arg1 arg2`.
 ```
 
-See the [example](example/SKILL.md) skill for all available options (model overrides, tool restrictions, subagent mode, etc.).
+See the [_example](_example/SKILL.md) skill for all available options (model overrides, tool restrictions, subagent mode, etc.).
 
 ## Key concepts
 
@@ -58,6 +67,7 @@ See the [example](example/SKILL.md) skill for all available options (model overr
 - **Shell injection** — embed live output with `` !`git branch --show-current` `` syntax
 - **Supporting files** — add extra `.md` files in the skill folder; Claude reads them lazily on demand
 - **Frontmatter options** — `disable-model-invocation`, `allowed-tools`, `model`, `context: fork`, and more
+- **HiFi Principle** — pictures over prose when they cost fewer tokens and transmit more truth (default ON)
 
 ## Notes
 

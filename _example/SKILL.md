@@ -4,8 +4,9 @@
 # ═══════════════════════════════════════════════════════════════
 #
 #  REQUIRED (practically):
-name: example
-description: Reference skill demonstrating all SKILL.md affordances. Use as a template when creating new skills.
+name: _example
+description: "🗺 DEV REFERENCE — All SKILL.md frontmatter options and affordances. Not a live skill. Start here when building new skills."
+disable-model-invocation: true
 #
 #  INVOCATION CONTROL:
 #    disable-model-invocation: true   # Only /example works — Claude can't auto-trigger
