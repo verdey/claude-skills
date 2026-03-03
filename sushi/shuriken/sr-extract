@@ -1,4 +1,30 @@
 #!/usr/bin/env bash
 # sr-extract <pattern> <file> [--context N]
 # Pull matching code blocks with surrounding context.
-echo "TODO: implement sr-extract. See /sushi kit for planned usage."
+# Composition: rg (find lines) + awk (extract blocks with context)
+set -euo pipefail
+
+PATTERN="${1:?Missing: pattern. Usage: sr-extract <pattern> <file> [--context N]}"
+FILE="${2:?Missing: file. Usage: sr-extract <pattern> <file> [--context N]}"
+CONTEXT=5
+
+shift 2
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        --context) shift; CONTEXT="${1:-5}" ;;
+        *) ;;
+    esac
+    shift
+done
+
+# Find matching line numbers, then extract blocks with context
+MATCHES=$(rg -n "$PATTERN" "$FILE" 2>/dev/null) || { echo "No matches for '$PATTERN' in $FILE"; exit 0; }
+
+echo "$MATCHES" | while IFS=: read -r line_num rest; do
+    START=$((line_num - CONTEXT))
+    END=$((line_num + CONTEXT))
+    [[ $START -lt 1 ]] && START=1
+    echo "--- $FILE:${line_num} (lines ${START}-${END}) ---"
+    awk "NR>=${START} && NR<=${END}" "$FILE" | cat -n | awk -v offset=$((START-1)) '{printf "%4d\t", NR+offset; $1=""; print substr($0,2)}'
+    echo ""
+done

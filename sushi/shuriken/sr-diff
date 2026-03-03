@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-# sr-diff <file-a> <file-b> [--stat-only]
-# Colored unified diff of two files.
-echo "TODO: implement sr-diff. See /sushi kit for planned usage."

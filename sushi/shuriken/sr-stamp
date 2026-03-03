@@ -1,4 +1,33 @@
 #!/usr/bin/env bash
 # sr-stamp <template-name> [KEY=value ...]
 # Inject boilerplate from templates with variable substitution.
-echo "TODO: implement sr-stamp. See /sushi kit for planned usage."
+# Requires: sushi/templates/ directory (not yet created)
+set -euo pipefail
+
+TEMPLATE="${1:?Missing: template name. Usage: sr-stamp <template-name> [KEY=value ...]}"
+TEMPLATE_DIR="/Users/verdey/.claude/skills/sushi/templates"
+
+if [[ ! -d "$TEMPLATE_DIR" ]]; then
+    echo "Templates directory not found: $TEMPLATE_DIR"
+    echo "Create it with template files to use sr-stamp."
+    exit 1
+fi
+
+TEMPLATE_FILE="$TEMPLATE_DIR/$TEMPLATE"
+if [[ ! -f "$TEMPLATE_FILE" ]]; then
+    echo "Template not found: $TEMPLATE_FILE"
+    echo "Available templates:"
+    ls "$TEMPLATE_DIR" 2>/dev/null || echo "  (none)"
+    exit 1
+fi
+
+# Read template, substitute KEY=value pairs
+CONTENT=$(cat "$TEMPLATE_FILE")
+shift
+for arg in "$@"; do
+    KEY="${arg%%=*}"
+    VALUE="${arg#*=}"
+    CONTENT=$(echo "$CONTENT" | sed "s|{{${KEY}}}|${VALUE}|g")
+done
+
+echo "$CONTENT"
