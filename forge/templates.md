@@ -1,6 +1,6 @@
 # PMO Workflow Templates (SSOT)
 
-> **Shared contract across the PMO family** (`/oracle`, `/forge`, `/reaper`, `/doc`, `/boots`, `/jin`, `/anubis`, `/worf`).
+> **Shared contract across the PMO family** (`/oracle`, `/forge`, `/reaper`, `/doc`, `/boots`, `/jin`, `/anubis`, `/worf`, `/sushi`).
 > Metaphor dir = canonical. One dir per member. `/yarr` answers for `/worf` (same persona, TNG lore).
 > Each skill reads only the sections relevant to its role.
 
@@ -45,6 +45,8 @@ always choose the richer format. More truth per token is always the goal.
 ---
 
 ## 🗺 PMO Family Workflow
+
+> Canonical topology: [mandala.md](/Users/verdey/.claude/skills/mandala.md). This diagram shows the workflow steps view.
 
 ```mermaid
 flowchart LR

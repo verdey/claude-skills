@@ -136,7 +136,7 @@ MEMORY.md / memory banks
       ↓
 SKILL.md files (PMO canon)
       ↓
-templates.md (SSOT)
+templates.md + mandala.md (shared SSOT)
 ```
 
 Each node must: (1) carry the same underlying truth as its parent, (2) have a bidirectional pointer to its source, (3) not duplicate what the node above already carries.

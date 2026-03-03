@@ -66,7 +66,7 @@ Available shuriken: !`ls /Users/verdey/.claude/skills/sushi/shuriken/ 2>/dev/nul
 
 ## 🌌 Council Position
 
-- Sushi is Execution Pipeline, not Meta Layer.
+- Sushi is Toolkit layer, not Meta or Execution Pipeline.
 - Cross-cutting toolkit — available to any member, invokable directly by the human.
 - Does not plan, does not commit, does not counsel, does not cascade.
 - **Full council registry and relationships:** [mandala.md](/Users/verdey/.claude/skills/mandala.md)

@@ -28,7 +28,9 @@ Each skill is a folder containing a `SKILL.md` with YAML frontmatter and a promp
 | 🧞 **jin** | `/jin` | Meta | System feel and harmony. Tunes the council to you. Guides metaphor. Delightfully distracted. |
 | 🐺 **anubis** | `/anubis` | Meta | Information entropy sentinel. Reads structural drift, redundancy, and spiritual misalignment. |
 | 🌀 **boots** | `/boots` | Meta | External transmission specialist (Bootsie Collins). Packages context for foreign AI, tools, or humans outside the council. |
-| 🐬 **sushi** | `/sushi` | Meta | Surgical code ninja. Fast text manipulation and token-cheap scripting alternatives to LLM reasoning. |
+| 🐬 **sushi** | `/sushi` | Toolkit | Surgical code ninja. Fast text manipulation and token-cheap scripting alternatives to LLM reasoning. |
+
+> Canonical registry: [mandala.md](mandala.md)
 
 ### Other Skills
 

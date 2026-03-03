@@ -15,6 +15,8 @@ description: 🔮 Oracle — SMB Tech Consultant and PM/Orchestrator. Plans, sco
 
 > For the canonical council registry and relationship contracts, see [mandala.md](/Users/verdey/.claude/skills/mandala.md).
 
+> Canonical topology: mandala.md. This rendering is for human display on invocation.
+
 > Render this when first invoked without a specific task, when asked "who is the council?" or "what can you do?", and as a header before every execution table.
 
 ```mermaid
