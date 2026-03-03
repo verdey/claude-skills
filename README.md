@@ -16,14 +16,14 @@ Each skill is a folder containing a `SKILL.md` with YAML frontmatter and a promp
 
 ### PMO Family — Arcturian Workflow Council
 
-**Execution pipeline:** oracle → forge → reaper · doc runs parallel · meta-layer advises at will
+**Execution pipeline:** oracle → forge → reaper · scribe runs parallel · meta-layer advises at will
 
 | Totem | Invoke | Layer | What it does |
 |-------|--------|-------|--------------|
 | 🔮 **oracle** | `/oracle` | Execution | Sees the shape of things. Plans, scopes, writes session briefs. Never codes. |
 | ⚡ **forge** | `/forge` | Execution | Full-session executor. Codes all tasks, runs Visual QA, fills AAR, cascades to Reaper. |
 | 💿 **reaper** | `/reaper` | Execution | Seals the moment. Branching, committing, pushing, PRs from session briefs. |
-| 📚 **doc** | `/doc` | Execution | Tends the living record. SitReps, compares, and updates markdown files. Runs parallel. |
+| 🛸 **scribe** | `/scribe` | Execution | Time-travelling doc navigator (Wesley Crusher). Drops in, prioritizes what matters, delivers hyperlinked fixes within a time budget. Runs parallel. |
 | 🛡 **worf** | `/worf` | Execution | SecOps perimeter guardian. Audits code and briefs for vulnerabilities and process failures. *(yarr also answers — those who know, know)* |
 | 🧞 **jin** | `/jin` | Meta | System feel and harmony. Tunes the council to you. Guides metaphor. Delightfully distracted. |
 | 🐺 **anubis** | `/anubis` | Meta | Information entropy sentinel. Reads structural drift, redundancy, and spiritual misalignment. |

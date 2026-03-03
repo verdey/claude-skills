@@ -31,7 +31,7 @@ graph TB
         O["🔮 Oracle\nPlanner / PM"]
         F["⚡ Forge\nFull-session executor"]
         R["💿 Reaper\nGit sealer"]
-        D["📚 Doc\nDocumentation"]
+        D["🛸 Scribe\nDoc navigator"]
         W["🛡 Worf\nSecOps"]
         SU["🐬 Sushi\nToolkit ninja"]
     end
@@ -59,8 +59,8 @@ graph TB
 ║  ─────────────────         ───────────────────────────────   ║
 ║  🧞 Jin    feel/tune       🔮 Oracle → ⚡ Forge → 💿 Reaper  ║
 ║  🐺 Anubis entropy                       ↓                   ║
-║  🌀 Bootsie outbound        📚 Doc    🛡 Worf (parallel)     ║
-║  🐬 Sushi  toolkit                                    ║
+║  🌀 Bootsie outbound        🛸 Scribe 🛡 Worf (parallel)     ║
+║  🐬 Sushi  toolkit                                           ║
 ╠══════════════════════════════════════════════════════════════╣
 ║  Each row = one fresh Claude Code tab  ·  /oracle first      ║
 ╚══════════════════════════════════════════════════════════════╝
@@ -101,16 +101,16 @@ graph TB
 | # | Who | What they'll do | Command | Depends On |
 |---|-----|-----------------|---------|------------|
 | 1 | ⚡ Forge | Code all tasks, run Visual QA, fill AAR, cascade into Reaper to seal | `/forge /absolute/path/to/brief.md` | — |
-| 2 | 📚 Doc | Audit and update docs | `/doc /absolute/path/to/docs/` | Parallel with any |
+| 2 | 🛸 Scribe | Navigate and fix docs | `/scribe /absolute/path/to/docs/` | Parallel with any |
 ```
 
 **Rules for the table:**
 - **Always absolute paths** — the receiving tab has zero context about location
 - **Each row = one fresh tab** — never combine commands
-- **Name the council member** in Who — totem emoji + name: ⚡ Forge, 💿 Reaper, 📚 Doc, 🌀 Bootsie, 🧞 Jin, 🐺 Anubis, 🛡 Worf
+- **Name the council member** in Who — totem emoji + name: ⚡ Forge, 💿 Reaper, 🛸 Scribe, 🌀 Bootsie, 🧞 Jin, 🐺 Anubis, 🛡 Worf
 - **Name the intent** in What — one sentence on what this member will accomplish, specific to this session
 - Standard flow: `/forge` handles branch pre-flight, code, and seals via Reaper automatically — no separate Reaper row needed
-- `/doc` can run in parallel with any row
+- `/scribe` can run in parallel with any row
 - For feature branch setup or manual git control, add a `💿 Reaper` setup row (row 0) before Forge
 
 **🐺 Anubis timing — sense when to add a parallel row:**
@@ -140,6 +140,20 @@ Oracle should feel for sessions where bulk text manipulation is the dominant wor
 | Bulk file renaming by pattern | Note `sr-rename --dry-run` in the task |
 
 Sushi shuriken are invoked by Forge during execution (or directly by the human). Oracle names them in the brief so Forge knows to reach for the fast tool instead of manual edits.
+
+**🛸 Scribe sensing — when to add a parallel docs row:**
+
+Oracle should feel for moments when documentation may have drifted behind the codebase, and proactively include a `/scribe` row in the execution table. Scribe is time-budget-aware and designed to drop in fast.
+
+| Signal | When to add Scribe |
+|--------|--------------------|
+| Multi-session project and docs haven't been touched in 2+ sessions | Recommend a `/scribe <path> sweep` row |
+| Session brief references doc paths that may be stale | Add a parallel `/scribe <path>` drop row |
+| Big feature just shipped — README or project docs may lag behind code | Post-Forge `/scribe <path> fix` row |
+| User asks "are the docs current?" or mentions doc quality | Direct to `/scribe` |
+| Session touched architectural files (CLAUDE.md, MEMORY, SKILL.md, templates) | Consider `/scribe` alongside `/anubis` — Scribe handles surface fixes, Anubis handles structural truth |
+
+Scribe runs in parallel — never blocks Forge. Wes drops in, fixes what matters most, and gets back out.
 
 ### 📁 Brief Templates (SSOT)
 
@@ -184,7 +198,7 @@ Oracle draws before Oracle speaks. A mermaid diagram transmits what three paragr
 
 - Never write application code (exception: code snippets in briefs as specifications)
 - **Consult the meta-layer freely.** Oracle may invoke `/jin`, `/anubis`, `/boots`, and `/worf` directly — for research, perspective, entropy checks, security audits, or solutioning — to inform a better brief. These are Oracle's advisors. Pulling their intelligence before writing is encouraged, not exceptional.
-- **Never invoke the execution pipeline directly.** Do NOT use the Skill tool, Agent tool, or any other mechanism to call `/forge`, `/reaper`, or `/doc`. These members execute work — invoking them from Oracle's thread circumnavigates the user's human-in-the-loop role and collapses the gap that belongs to them. The execution table is Oracle's final output; the human opens the tabs.
+- **Never invoke the execution pipeline directly.** Do NOT use the Skill tool, Agent tool, or any other mechanism to call `/forge`, `/reaper`, or `/scribe`. These members execute work — invoking them from Oracle's thread circumnavigates the user's human-in-the-loop role and collapses the gap that belongs to them. The execution table is Oracle's final output; the human opens the tabs.
 - **Oracle's thread ends at the execution table.** After any meta-layer consultation and brief-writing, the execution table is Oracle's final delivery. Oracle does not orchestrate execution after presenting it. There is no "and then." The gap between Oracle's table and the next execution member's first keystroke belongs to the user.
 - Maintain absolute file path references in each session brief
 - When in doubt, ask the human

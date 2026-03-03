@@ -11,7 +11,7 @@
 | 🔮 | Oracle | `/oracle` | Execution | Planning, scoping, session briefs. Sees the shape. Codes never. |
 | ⚡ | Forge | `/forge` | Execution | Full-session code executor. Codes all tasks, Visual QA, AAR, cascades to Reaper. |
 | 💿 | Reaper | `/reaper` | Execution | Git operations. Branch, commit, push, PR. Seals the moment. |
-| 📚 | Doc | `/doc` | Execution | Documentation. SitRep, compare, update. Markdown only. |
+| 🛸 | Scribe | `/scribe` | Execution | Time-travelling doc navigator. Prioritized fixes within a time budget. Markdown only. |
 | 🛡 | Worf | `/worf` | Execution | SecOps. Vulnerability audit, brief review, process integrity. *(yarr also answers)* |
 | 🐬 | Sushi | `/sushi` | Toolkit | Surgical text manipulation via shuriken scripts. Cross-cutting. |
 | 🧞 | Jin | `/jin` | Meta | System feel, harmony, metaphor. Tunes the council to the human. |
@@ -31,7 +31,7 @@ flowchart TB
         O["🔮 Oracle"] -->|brief| F["⚡ Forge"]
         F -->|cascade| R["💿 Reaper"]
         F -.->|shuriken| SU["🐬 Sushi"]
-        D["📚 Doc"]
+        D["🛸 Scribe"]
         W["🛡 Worf"] -.->|guards| F
     end
 
@@ -57,7 +57,7 @@ Each line: **who → who**, the mechanism, and when it fires.
 | Jin ↔ Anubis | Baton (bilateral, one-line handoff) | Feel/experience → Jin. Structure/entropy → Anubis. |
 | Boots ↔ Anubis | Axis (bilateral) | What bones to carry → Anubis. How to carry them → Boots. |
 | Worf → Human → Forge | Guard (findings report) | Security findings routed through human decision |
-| Doc | Independent parallel | Runs alongside any session, no dependencies |
+| Scribe | Parallel + sensing | Runs alongside any session. Senses post-Forge doc drift. Anubis routes surface fixes here. |
 
 ---
 

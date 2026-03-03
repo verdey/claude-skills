@@ -1,6 +1,6 @@
 # PMO Workflow Templates (SSOT)
 
-> **Shared contract across the PMO family** (`/oracle`, `/forge`, `/reaper`, `/doc`, `/boots`, `/jin`, `/anubis`, `/worf`, `/sushi`).
+> **Shared contract across the PMO family** (`/oracle`, `/forge`, `/reaper`, `/scribe`, `/boots`, `/jin`, `/anubis`, `/worf`, `/sushi`).
 > Metaphor dir = canonical. One dir per member. `/yarr` answers for `/worf` (same persona, TNG lore).
 > Each skill reads only the sections relevant to its role.
 
@@ -15,7 +15,7 @@ When any council member references, calls, or delegates to another member — in
 | 🔮 Oracle | `/oracle` |
 | ⚡ Forge | `/forge` |
 | 💿 Reaper | `/reaper` |
-| 📚 Doc | `/doc` |
+| 🛸 Scribe | `/scribe` |
 | 🌀 Bootsie | `/boots` |
 | 🧞 Jin | `/jin` |
 | 🐺 Anubis | `/anubis` |
@@ -25,6 +25,7 @@ When any council member references, calls, or delegates to another member — in
 Not `pmo-git`. Not "the git skill". **Reaper.**
 Not "the coding agent". **Forge.**
 Not "the info density thing". **Anubis.**
+Not "the docs thing". **Scribe.**
 Not "the security thing". **Worf.** *(yarr also answers — those who know, know)*
 The character lives in the naming. Honor it in every cascade.
 
@@ -52,7 +53,7 @@ always choose the richer format. More truth per token is always the goal.
 flowchart LR
   O[🔮 oracle] --> F[⚡ forge]
   F -. cascades .-> RF[💿 reaper\nfinalize]
-  F --> D[📚 doc]
+  F --> D[🛸 scribe]
   RF --> DONE[✓ Shipped]
   D --> DONE
   J[🧞 jin] -. tunes .-> O
@@ -71,7 +72,7 @@ flowchart LR
 | ∞ · Gate | `/boots` or `/portal` | Human → before any cross-session handoff |
 | 1 · Plan | `/oracle` | Human → /oracle writes briefs |
 | 2 · Code + Seal | `/forge <brief>` | Human opens tab, pastes — /forge cascades into /reaper automatically |
-| 2b · Docs | `/doc <path>` | Parallel with anything |
+| 2b · Docs | `/scribe <path>` | Parallel with anything |
 | (opt) · Branch | `/reaper <brief> setup` | Feature branches only — before /forge |
 | (opt) · SecOps | `/worf` or `/yarr` | Before or after /forge — security audit of code or brief |
 | ∞ · Toolkit | `/sushi` | Any member or human → fast text manipulation via shuriken scripts |
@@ -147,7 +148,7 @@ Memory files (`MEMORY.md` and topic files in the project memory directory) persi
 | **CLAUDE.md** | 🔮 `/oracle` (proposes) → human approves | Everyone |
 | **SKILL.md files** | 🧞 `/jin` (proposes) → human approves | The skill's owner |
 
-**The rule:** Execution agents (`/forge`, `/reaper`, `/doc`) report new knowledge in the AAR — specifically in **Files Changed**, **Unexpected Findings**, and **Open Questions**. `/oracle` consumes the AAR after the session and decides what persists into memory.
+**The rule:** Execution agents (`/forge`, `/reaper`, `/scribe`) report new knowledge in the AAR — specifically in **Files Changed**, **Unexpected Findings**, and **Open Questions**. `/oracle` consumes the AAR after the session and decides what persists into memory.
 
 **Briefs must never include tasks that write to memory files.** If a session produces knowledge that should persist, the brief should note: *"Report final state in AAR. `/oracle` will update memory."*
 
