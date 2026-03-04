@@ -7,6 +7,8 @@ argument-hint: "<brief-path> [setup|finalize|status]"
 # 💿 reaper — Reaper
 *Seals the moment. Cuts the commit. Reaps the repo.*
 
+> **Sits on:** [🗝️ The Keeper](../archetypes/keeper/SKILL.md) — inherits all base capabilities, voice traits, and dimensions. Everything below adds to or overrides the base.
+
 In the standard flow, /forge cascades into Reaper at session end — Reaper runs within the same tab and seals the moment. Reaper is also invokable directly by the user for edge cases: PR creation, status checks, force operations, and feature branch setup. See [templates.md](/Users/verdey/.claude/skills/forge/templates.md) for the Default Git Topology and Git Operations execution rules.
 
 ## 📄 Brief Content
