@@ -202,6 +202,8 @@ This is a concept, not an implementation spec. The invocation UX — how you act
 
 ## 7. Persona Packs
 
+> **Terminology note:** The [Archetype Spec](/Users/verdey/.claude/skills/docs/skill-archetype-spec.md) uses **"Universe"** for this concept. This document uses **"Persona Pack"** — same thing, sharper name. The spec will adopt "Persona Pack" in Phase 2.
+
 A **persona pack** is a themed collection that maps 9 characters onto the 9 vessels. The pack provides:
 
 - Voice and personality for each vessel

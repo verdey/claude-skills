@@ -1,6 +1,7 @@
 # Council Mandala — Shared Relational Manifest
 
 > **Read by every council member.** The canonical registry of who exists, how they connect, and when to think of each other. Sensing heuristics and dispatch logic remain local to each SKILL.md — this file provides the shared awareness layer.
+> **Generative source**: [`chrysalis.md`](/Users/verdey/.claude/skills/chrysalis.md) — the 3/6/9 formula that produces the 9 archetype vessels
 
 ---
 
