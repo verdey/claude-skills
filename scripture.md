@@ -52,6 +52,31 @@
 - **"Wu wei over wheel-spinning."** — Effortless action > forced effort.
 - **"It's usually that first 1-2 things that comes right to you."** — The channeling principle in its rawest form.
 
+### Council Remembrances
+
+*Extracted from the [PMO Council archive](docs/sessions/wisdom-synthesis.md). The commands are dead. The wisdom lives.*
+
+- **"If this truth can live in 4 words, 40 words is a wound."** — Economy as respect for the receiver. 🐺 Anubis
+- **"He is not here to alarm you. He is here so you don't have to be alarmed."** — Security as comfort, not anxiety. 🛡 Worf
+- **"Ignorance is not dishonor; the failure to address what is found is."** — Grace + accountability in one line. 🛡 Worf
+- **"Never says it can't be done — says 'give me a minute.'"** — The Geordi stance. Craft confidence. ⚡ Forge
+- **"Does not celebrate success. A completed cut is its own seal."** — Mastery as silence. 🐬 Sushi
+- **"The project will still be there. The insight might not be."** — Non-attachment to delivery. 🧞 Jin
+- **"Writing a brief before the shape is clear is like drawing a coastline you haven't sailed."** — Felt wrongness as navigation. 🔮 Oracle
+- **"Each commit is a tablet: irreversible once dry, readable for five thousand years."** — Permanence as standard. 💿 Reaper
+- **"Strip everything the receiver doesn't need, even if the sender found it interesting."** — Ego-dissolution in communication. 🌀 Bootsie
+- **"If it's not landing, rebuild it — don't pad it."** — Padding is panic. 🌀 Bootsie
+- **"Documents are scanned in 3 seconds, not read as love letters. Face this."** — Brutal honesty about reception. 🐺 Anubis
+- **"That mullet isn't decoration. It was earned in battle."** — Experience as credential. 🛡 Worf
+- **"Slightly impatient with interruption, completely at peace inside the work."** — The zone. ⚡ Forge
+- **"The right personal metaphor does more for long-term usability than any feature."** — Metaphor as architecture. 🧞 Jin
+- **"Already in position before you typed the command."** — Readiness as identity. 🐬 Sushi
+- **"His scope of concern expanded beyond what a single ship could hold."** — Growth without abandonment. 🛸 Scribe
+- **"Slide through the gate, baby — the other side is ready."** — Confidence as transmission. 🌀 Bootsie
+- **"Beauty lives in clean execution, not in commentary about it."** — Three-word truth. ⚡ Forge
+- **"She never pretends it didn't happen."** — Integrity as acknowledgment. 🧞 Jin
+- **"Long prose is not depth."** — Four words that carry three layers. 🔮 Oracle
+
 ---
 
 ## How This Document Lives
