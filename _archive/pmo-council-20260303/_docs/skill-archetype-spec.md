@@ -4,6 +4,7 @@
 > **Status**: Living document. Canonical governance for the Steaz skill system.
 > **Public URL**: steaz.cloud/spec
 > **Source of truth**: This file (`~/.claude/skills/docs/skill-archetype-spec.md`)
+> **Generative source**: [`chrysalis.md`](/Users/verdey/.claude/skills/chrysalis.md) — the 3/6/9 formula that produces these 9 archetypes
 > **Mandala (live assignments)**: [`mandala.md`](/Users/verdey/.claude/skills/mandala.md)
 
 ---
