@@ -96,13 +96,19 @@ gitGraph
    checkout dev
    merge feature/x id: "PR into dev"
    checkout main
-   merge dev id: "PR → prod"
+   merge dev id: "merge → prod"
 ```
 
 - **`dev`** — active development. All work happens here by default. Publishes to preview/staging subdomain.
-- **`main`** — production. Deployed via Railway CI/CD. Never push directly.
-- **Production release** — PR from `dev` into `main`. Human approves (safety gate). Railway deploys on merge.
+- **`main`** — production. Deployed via Railway CI/CD.
+- **Production release** — `/reaper` pushes `dev` → `main` directly. **Only after the human has visually verified on preview/staging.** No agent may perform or bypass this check.
 - **Feature branches** — exception, not default. Oracle may recommend one for complex/risky work. Requires user approval. Created from `dev`, PR back into `dev`.
+
+### Production Gate: Human Visual Check
+
+> **This step is non-delegable.** No agent, no automation, no council member may perform or skip this check. The human opens the preview/staging URL in a browser, verifies the work, and gives the go-ahead. `/reaper` waits for explicit human confirmation before pushing to `main`.
+
+The preview/staging server (`dev` branch, auto-deployed) is the final gate before production. The human checks what shipped to `dev` actually looks and works right in a real browser — not screenshots, not Playwright, not a proxy. Eyes on glass.
 
 ### Environments
 
@@ -182,8 +188,7 @@ If the build fails, do NOT push. Fix the build first, then commit and push.
 Follow the Default Git Topology above:
 - Default: work on `dev`, commit to `dev`, push to `dev`
 - Feature branches: only recommend when complexity/risk warrants it. Requires user approval via AskUserQuestion before including in the brief.
-- Production release: PR `dev` into `main` when validated and ready
-- Never push directly to `main` — always go through a PR
+- Production release: push `dev` → `main` only after **human visual check** on preview/staging. `/reaper` confirms with the human before pushing. This gate is non-delegable — no agent may bypass it.
 
 ---
 
