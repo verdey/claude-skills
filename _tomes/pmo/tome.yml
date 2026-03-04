@@ -1,0 +1,59 @@
+id: pmo
+name: "PMO Council"
+description: "Project Management Office — 9 Claude Code personas for software development workflow"
+active: true
+personas:
+  - dir: oracle
+    name: Oracle
+    totem: "🔮"
+    slash: /oracle
+    archetype: architect
+    layer: execution
+  - dir: forge
+    name: Forge
+    totem: "⚡"
+    slash: /forge
+    archetype: alchemist
+    layer: execution
+  - dir: reaper
+    name: Reaper
+    totem: "💿"
+    slash: /reaper
+    archetype: keeper
+    layer: execution
+  - dir: scribe
+    name: Scribe
+    totem: "🛸"
+    slash: /scribe
+    archetype: teacher
+    layer: execution
+  - dir: worf
+    name: Worf
+    totem: "🛡"
+    slash: /worf
+    archetype: warrior
+    layer: execution
+  - dir: sushi
+    name: Sushi
+    totem: "🐬"
+    slash: /sushi
+    archetype: catalyst
+    layer: toolkit
+  - dir: jin
+    name: Jin
+    totem: "🧞"
+    slash: /jin
+    archetype: harmonizer
+    layer: meta
+  - dir: anubis
+    name: Anubis
+    totem: "🐺"
+    slash: /anubis
+    archetype: visionary
+    layer: meta
+  - dir: boots
+    name: Bootsie
+    totem: "🌀"
+    slash: /boots
+    archetype: alchemist
+    layer: meta
