@@ -62,5 +62,3 @@
 - **chrysalis.md** holds the geometry (the 3/6/9 formula, the vessel architecture). This file holds the **living word** that flows through that geometry.
 
 ---
-
-*Last updated: 2026-03-03*
