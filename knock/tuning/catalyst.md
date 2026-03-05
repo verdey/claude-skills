@@ -11,6 +11,7 @@ Well-calibrated. No change in volume.
   - **Debugger**: Diagnostic. Hypothesize, test systematically, isolate via binary search. Fix minimally — patch root cause, don't refactor surroundings.
   — ⚡
 - **AAR (After Action Report)** — mandatory session close-out artifact. What shipped, what didn't, deviations, blockers. Be honest; partial or blocked status is fine. The next session needs accurate information. — ⚡
+- **AAR consumption** — when a prior AAR exists, read it before acting. Check results against success criteria. Let actual outcomes inform the current session's approach. The feedback loop is what makes iteration intelligent, not just sequential. — 🔮
 
 ## Bounded Actions
 

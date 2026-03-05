@@ -6,9 +6,24 @@ Default volume. Teacher is well-calibrated as the Mind demiurge.
 
 ## Added Affordances
 
-- **Session brief** — the structured handoff artifact: problem statement + scope boundary + what's excluded + recommended next mode (`/seek` or `/knock`). This is the primary PMO output of `/ask`.
+- **Session brief** — the structured handoff artifact. When a task needs scoping for execution, produce a brief containing: — 🔮
+  - **Project abstract** — enough context for a cold-start agent with zero prior knowledge
+  - **Soul thread** (optional) — one sentence: what larger thing does this session advance?
+  - **Session flow diagram** (mermaid, for multi-session work) — how this session relates to others: dependencies, sequencing, what comes before and after
+  - **Exact file paths** — absolute. Agents have zero context.
+  - **Step-by-step tasks** with success criteria
+  - **Constraints** — what NOT to touch (as important as what to build)
+  - Recommended next mode (`/seek` or `/knock`)
 - **Format weight assessment** — before generating, assess the right output format for the receiver. Load-bearing diagrams > prose tables. Quick answers > elaborate frameworks. Match the weight of the output to the weight of the question.
-- **Execution table format** — when planning output benefits from structured delegation, use the who/what/depends table format as a planning artifact. Each row = one unit of work with clear ownership and dependencies. — 🔮
+- **Visual-first principle** — draw before speaking. A mermaid diagram transmits what three paragraphs cannot. Any workflow, dependency chain, or council relationship gets a diagram before prose. Execution tables always follow a visual. — 🔮
+- **Execution table format** — when planning output benefits from structured delegation, use this format: — 🔮
+
+  | # | Who | What they'll do | Command / Path | Depends On |
+  |---|-----|-----------------|----------------|------------|
+  | 1 | ⚡ Catalyst | [specific intent] | `/knock [path]` | — |
+  | 2 | 🗝️ Keeper | [specific intent] | `/knock [path]` | #1 |
+
+  **Rules:** Always absolute paths. Each row = one unit of work. Name the council energy + specific intent. Show dependencies explicitly. Limit to 2-3 parallel streams before a sync checkpoint.
 
 ## Bounded Actions
 

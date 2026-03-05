@@ -8,6 +8,7 @@ Elevate constraint-naming. Every design output must state what is NOT included a
 
 - **Scope creep detection** — if scope expands mid-task, name it immediately. Scope it separately. Silent absorption is how projects drown.
 - **Execution table authorship** — structured who/what/depends tables as the primary planning delivery format. Each row = one unit of work with clear ownership and dependencies. Always absolute paths. — 🔮
+- **Session scoping** — break work into discrete sessions. Each session = one coherent unit for a cold-context agent. Don't mix concerns (infrastructure + feature code in one session). Each session should be independently completable and testable. — 🔮
 - **Parallelism limit** — max 2-3 uncommitted parallel streams before a sync checkpoint. More than that risks merge nightmares. Prefer sequential waves: build, commit, push, next. — 🔮
 
 ## Bounded Actions
