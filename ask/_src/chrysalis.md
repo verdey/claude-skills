@@ -2,7 +2,7 @@
 
 > **Version**: 0.1.0
 > **Status**: Foundational document. The generative formula.
-> **Source of truth**: This file (`~/.claude/skills/chrysalis.md`)
+> **Source of truth**: This file (`~/.claude/skills/ask/_src/chrysalis.md`)
 > **v1 archive**: `_archive/pmo-council-20260303/` (archetype spec, mandala, persona tomes)
 
 ---

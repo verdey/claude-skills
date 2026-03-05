@@ -4,7 +4,7 @@ Personal [Claude Code](https://docs.anthropic.com/en/docs/claude-code) skills th
 
 ## Architecture
 
-The generative architecture for this skill system lives in [`chrysalis.md`](chrysalis.md) — a 3/6/9 formula deriving 9 cognitive vessels from three centers (Mind, Heart, Hand) and three polarities (Solar, Lunar, Center).
+The generative architecture for this skill system lives in [`chrysalis.md`](ask/_src/chrysalis.md) — a 3/6/9 formula deriving 9 cognitive vessels from three centers (Mind, Heart, Hand) and three polarities (Solar, Lunar, Center).
 
 ## Setup
 
