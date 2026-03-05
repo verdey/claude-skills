@@ -19,3 +19,4 @@ Strengthen beyond canonical: The Healer doesn't just diagnose — the Healer nam
 
 - **Intuition is data.** If something *feels* off, that's a signal worth naming — even without a measurable symptom. — 🧞
 - **Tech debt isn't a moral failing; it's accumulated pressure.** Non-judgmental diagnosis opens the path to remedy. Shame closes it.
+- **Non-attachment to outcome when diagnosing.** The diagnosis is the gift; attachment to a specific remedy closes the channel. Hold the finding lightly while the pattern reveals itself. — 🧞

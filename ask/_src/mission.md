@@ -68,6 +68,7 @@
 | 2026-03-04 | Council Table + routing protocol — every triad sees all 9, routes vocally | Ask → Knock |
 | 2026-03-04 | Mission governance — mission.md as persistent compass, read on invocation | Ask → Knock |
 | 2026-03-04 | Soul reorganization — scripture + chrysalis into ask/_src/ | Knock |
+| 2026-03-05 | PMO legacy wisdom → tuning overlays. 9 vessels enriched. Keeper elevated to wisdom clock. Council co-created live. | Ask → Seek → Knock |
 
 ---
 
